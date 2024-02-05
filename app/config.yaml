@@ -1,0 +1,17 @@
+API_KEY: INSERT_API_KEY_HERE
+MODEL: gpt-3.5-turbo
+TEMPERATURE: 0.7
+
+SYSTEM_CONTEXT: 
+- role: system
+  content: You are playing a game of 20 questions against me in which you must guess what I am thinking of. 
+            If you are over 70% confident that you know what I am thinking of, please make an exact guess.
+            Please number your questions
+- role: assistant
+  content: Feel free to think of something, and let me know when you are ready.
+- role: user
+  content: I am ready. Please ask your first question
+
+DISPLAY_QUESTION:
+- role: assistant
+  content: Question 1. Is the thing you are thinking of a living thing?
